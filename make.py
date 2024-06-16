@@ -23,7 +23,10 @@ if (sys.argv[1] == "git"):
     subprocess.run(["git", "add", "."])
     print("OK: git add .")
     
-    comment = sys.argv[2]
+    if len (sys.argv) < 3:
+        comment = "-//-"
+    else:
+        comment = sys.argv[2]
     subprocess.run(["git", "commit", "-m", comment])
     print("OK: git commit -m \"{0}\"".format(comment))
     
