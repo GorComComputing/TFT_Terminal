@@ -38,6 +38,10 @@ else:
 	print ("Error. Choose one from parameters:")
 	print ("  git  - commit to GitHub")
 	sys.exit (1)
+    
+# Удалить __pycache__
+subprocess.run(["rm", "-r", "__pycache__"])
+print("OK: rm -r __pycache__")
 	
 	
 
