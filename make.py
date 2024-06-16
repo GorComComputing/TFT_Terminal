@@ -28,7 +28,7 @@ if (sys.argv[1] == "git"):
     print("OK: git commit -m \"{0}\"".format(comment))
     
     
-    subprocess.run(["git", "push", "https://{0}@github.com/{1}/{2}.git".format(tokenGit, userGit, repoGit)])
+    subprocess.run(["git", "push", "https://{0}@github.com/{1}/{2}.git".format(secret.tokenGit, userGit, repoGit)])
     print("OK: git push to {0}".format(repoGit))
     
 	
