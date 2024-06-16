@@ -46,3 +46,7 @@ $ python make.py git "Комментарий"
 
 Copyright (c) 2024 Evgeny Goryachev  
 Gor.Com 
+
+![img/Photo2.jpg](img/Photo2.jpg)
+![img/Photo3.jpg](img/Photo3.jpg)
+![img/Photo4.jpg](img/Photo4.jpg)
