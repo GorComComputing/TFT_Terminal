@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import subprocess
 import sys
+import secret
 
 
 userGit = "GorComComputing"
