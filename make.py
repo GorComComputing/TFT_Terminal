@@ -32,7 +32,6 @@ if (sys.argv[1] == "git"):
     print("OK: git push to {0}".format(repoGit))
     
 	
-	
 else:
 	print ("Error. Choose one from parameters:")
 	print ("  git  - commit to GitHub")
