@@ -8,14 +8,21 @@ userGit = "GorComComputing"
 repoGit = "TFT_Terminal"
 
 
+# Удалить __pycache__
+def delPycache():	
+	subprocess.run(["rm", "-r", "__pycache__"])
+
+
 if len (sys.argv) < 2:
-	print ("Error. Choose one from parameters:")
-	print ("  git  - commit to GitHub")
-	sys.exit (1)
+    print ("Error. Choose one from parameters:")
+    print ("  git  - commit to GitHub")
+    delPycache()
+    sys.exit (1)
 if len (sys.argv) > 3:
-	print ("Error. Choose one from parameters:")
-	print ("  git  - commit to GitHub")
-	sys.exit (1)
+    print ("Error. Choose one from parameters:")
+    print ("  git  - commit to GitHub")
+    delPycache()
+    sys.exit (1)
 
     
 if (sys.argv[1] == "git"):
@@ -32,16 +39,14 @@ if (sys.argv[1] == "git"):
     
     subprocess.run(["git", "push", "https://{0}@github.com/{1}/{2}.git".format(secret.tokenGit, userGit, repoGit)])
     print("OK: git push to {0}".format(repoGit))
-    
+    delPycache()
 	
 else:
-	print ("Error. Choose one from parameters:")
-	print ("  git  - commit to GitHub")
-	sys.exit (1)
-    
-# Удалить __pycache__
-subprocess.run(["rm", "-r", "__pycache__"])
-print("OK: rm -r __pycache__")
+    print ("Error. Choose one from parameters:")
+    print ("  git  - commit to GitHub")
+    delPycache()
+    sys.exit (1)
+
 	
 	
 
