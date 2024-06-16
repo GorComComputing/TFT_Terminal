@@ -47,6 +47,12 @@ $ python make.py git "Комментарий"
 Copyright (c) 2024 Evgeny Goryachev  
 Gor.Com 
 
+##### Фотографии некоторых программ
+Подключение к Wi-Fi:
 ![img/Photo2.jpg](img/Photo2.jpg)
+Погода с сервера openweathermap.org:
 ![img/Photo3.jpg](img/Photo3.jpg)
+Терминал UART для связи с другими устройствами:
 ![img/Photo4.jpg](img/Photo4.jpg)
+График освещенности (фоторезистор):
+![img/Photo5.jpg](img/Photo5.jpg)
